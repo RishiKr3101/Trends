@@ -1,0 +1,376 @@
+{% extends "base2.html" %}
+
+{% block css %}
+<style>
+    h1 {
+        font-size: 40px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h2 {
+
+        font-size: 30px !important;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h3 {
+
+        font-size: 21px !important;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 10px !important;
+    }
+
+
+
+    a:hover {
+        color: #20023c;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #main-container_2 h1 {
+        font-size: 52px !important;
+    }
+
+    #my-div {
+        position: relative;
+        background-color: rgb(227, 227, 245);
+        width: 500px;
+        height: 520px;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transition: opacity 250ms ease-in;
+    }
+
+    .fade-in.appear {
+        opacity: 1;
+    }
+
+
+
+    .icon:hover {
+        box-shadow: 0 0 31px rgba(0, 81, 255, 0.479);
+    }
+
+
+
+    #main-container_2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10% !important;
+        margin: 0 auto;
+        width: 700px;
+        text-align: center;
+    }
+
+    @media (max-width: 500px) {
+        #main-container_2 {
+            top: 0%;
+            width: 100%;
+            padding: 30px;
+        }
+    }
+
+
+
+    #main-container_2 img {
+
+        opacity: 0.3;
+    }
+
+    #particles-js {
+        position: fixed;
+    }
+
+    #universe {
+        position: fixed;
+    }
+
+    #description_2 {
+        margin: 10px 0 0 0;
+    }
+
+    body .Cardscontainer {
+        top: 10%;
+        left: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Cardscontainer {
+        position: relative;
+        margin-right: -200px;
+        height: 100vh;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .Cardscontainer .card {
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background: rgb(233, 233, 233);
+        text-align: center;
+
+
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.445);
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .Cardscontainer .card .TitleBx {
+        position: relative;
+        width: 250px;
+        height: 160px;
+        top: -10px;
+        left: 10px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0, 39, 146, 0.486);
+    }
+
+
+
+    .Cardscontainer .card .content {
+        position: relative;
+        top: 10%;
+        
+
+        padding: 10px 15px;
+        text-align: center;
+        color: #111;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .Cardscontainer .card:hover {
+        height: 435px;
+    }
+
+    .Cardscontainer .card:hover .content {
+
+        visibility: visible;
+        opacity: 1;
+        margin-top: -50px;
+        transition-delay: 0.1s;
+    }
+</style>
+{% endblock %}
+
+{% block title %}Offers{% endblock %}
+
+
+
+{%block navlist %}
+
+{%endblock%}
+
+
+
+
+{% block content %}
+<div id="main-container_2">
+    <marquee behavior="" direction="" bgcolor="cyan">
+        <h3 style="color: crimson;">50% off Upto Rs.1000 on grooming products of Orders above Rs.1999</h3>
+    </marquee>
+    <marquee behavior="" direction="" bgcolor="yellow">
+        <h3 style="color: rgb(203, 20, 220);">Get Trends assured brands such as LEVIS, H&M, LEE, FOREVER11 and much
+            more..</h3>
+    </marquee>
+    <br>
+    <br>
+    <br>
+
+    <h1>Exciting Offers on Various Brands</h1>
+    <h2>Your very own Shopping destination</h2>
+    <h3>Get Fashion Electronics and Daily related Products at minimum price.</h3>
+    <br>
+    <br>
+
+    <img src="static/assets/logo.png" alt="">
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="Cardscontainer">
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/29/1e487167-0f78-48ea-b47e-abfb099bbdfb1590740530724-Sassafras.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>SASSAFRAS</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/17/137c7c37-f038-4113-a56c-c6137f2f969f1594984508589-Vishudh.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>VISHUDH</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/17/a570ad1f-2d86-4fa0-825d-ceb2503a8f901594984445900-Wrogn--3-.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>WROGN</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/17/dc3ccd49-675d-479e-9762-274e1c5ea1941594983869587-USPA--7-.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>U.S. POLO</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/23/02149475-11ac-4e99-b911-285a038419a71595496205305-Carlton-London.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>CARLTON</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/23/88049f61-7293-42ad-9b0e-f65255a1595b1595496205059-Anouk.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>ANOUK</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/23/aa2d33c3-e2ff-49ea-9e7d-d5eed1b2e9d31595496205200-Sangria.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>SANGRIA</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/23/dba37e54-add7-4fa4-854b-132f680e26831595496205520-W.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>W</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+        </div>
+    </div>
+    <div class="card fade-in">
+        <div class="TitleBx">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/23/fe24fa11-1453-4099-9a45-d8d16f06579d1595496205410-LorealParis-.jpg"
+                width="200" height="250" alt="product">
+        </div>
+        <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>L'OREAL Paris</h2>
+            
+            <a href=""><input type="button" id="button" name="search" value="Shop" /></a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

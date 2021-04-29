@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block css %}
+<style>
+    #main-container {
+        top: 15% !important;
+
+    }
+
+    .fade-in {
+        opacity: 0;
+        transition: opacity 250ms ease-in;
+    }
+
+    .fade-in.appear {
+        opacity: 1;
+    }
+
+    #particles-js {
+        position: fixed;
+    }
+
+    h1 {
+        font-size: 44px !important;
+        font-family: 'Times New Roman', serif;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 32px !important;
+        font-weight: 250;
+        margin: 0;
+    }
+
+    p {
+        font-size: 20px !important;
+        margin-bottom: 20px;
+    }
+
+
+
+    a:hover {
+        color: #20023c;
+    }
+</style>
+{% endblock %}
+{% block title %}About{% endblock %}
+{% block content %}
+<div id="main-container">
+    <h1>Hello | Bonjour</h1>
+    <h2>
+        My name is Rishi Kumar.
+    </h2>
+    <img id="image" src="static/assets/Rishi_img.jpeg" />
+    <ul id="social-media-icons">
+        <li>
+            <a href="https://instagram.com/its.rishii_?igshid=bapedcym0e1m" target="_blank"><img class="icon"
+                    src="static/assets/instagram.png" /></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/rishi-kumar-7468731a1" target="_blank"><img class="icon"
+                    src="static/assets/linkedin.png" /></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/itsrishii_?s=09" target="_blank"><img class="icon"
+                    src="static/assets/twitter.png" /></a>
+        </li>
+        <li>
+            <a href="https://github.com/RishiKr3101" target="_blank"><img class="icon"
+                    src="static/assets/github.png" /></a>
+        </li>
+    </ul>
+    <div id="description">
+        <p>
+            I'm a <span id="age"></span>-year-old, Student at <a href="http://thapar.edu/" target="_blank">Thapar
+                University</a>, Patiala
+        </p>
+        <p>A Tech Enthusiast and a Sofware Developer with nerdish tendencies.</p>
+        <p>You can know more about me in the <a
+                href="https://drive.google.com/file/d/1ojGQLsXlgRr4N0kbTCwPIveU7g-fg1eg/view?usp=sharing"
+                target="_blank">Resume</a>.</p>
+        <p>
+            You can checkout my works on my <a href="https://github.com/RishiKr3101" target="_blank">github</a> profile.
+        </p>
+    </div>
+</div>
+
+
+<script>
+    window.onload = () => {
+        const birthYear = 2001;
+        const currentYear = new Date().getFullYear();
+        const age =
+            new Date() > new Date(`01/31/${currentYear}`)
+                ? currentYear - birthYear
+                : currentYear - birthYear - 1;
+        document.getElementById("age").innerText = `${age}`;
+    };
+</script>
+{% endblock %}

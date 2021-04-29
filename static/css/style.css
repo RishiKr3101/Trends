@@ -1,0 +1,156 @@
+  body {
+  color: #1a1a1a !important;
+  background-color: #d3c1fd !important;
+}
+
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+#main-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #main-container {
+    top: 0%;
+    width: 100%;
+    padding: 30px;
+  }
+
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #dbedff;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+}
+
+.fade-in{
+  opacity:0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+#speaker {
+  width: 25px;
+  position: relative;
+  top: 7px;
+  cursor: pointer;
+}
+
+#image {
+  margin: 10px 0;
+  width: 200px;
+  
+  
+}
+
+#social-media-icons {
+  margin: 0;
+  padding: 0;
+}
+
+#social-media-icons  > li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 4px;
+}
+
+#social-media-icons > li > a > img {
+  width: 30px;
+}
+
+#description {
+  margin: 20px 0 0 0;
+}
+
+.fade-in{
+  opacity:0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+
+
+
+    * {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    
+
+    .starfield {
+        background-color: #262626;
+    }
+
+    .star0 {
+        height: 1px;
+        width: 1px;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .star1 {
+        height: 2px;
+        width: 2px;
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .star2 {
+        height: 3px;
+        width: 3px;
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .star3 {
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .star4 {
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+    }
+
+
