@@ -33,6 +33,17 @@
 
 }
 
+.footer
+{
+	align-content: center;
+	margin-top:10px;
+	padding-top:10px;
+	background-color:green;
+	background-color:#31353d;
+	color:white;
+  z-index: 0;
+}
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -42,7 +53,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .fade-in{
@@ -100,6 +111,7 @@
 .fade-in.appear{
   opacity: 1;
 }
+
 
 
 
