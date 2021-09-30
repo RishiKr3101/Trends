@@ -9,7 +9,7 @@ A Shopping Website Tempelate made using Flask & (Html Css & JS)
 
 ## step 1
 
-~ Install Flask : open cmd prompt or terminal and enter command " pip install flask " if you have Python 2 or less installed else enter command "pip3 install flask" 
+~ Install Flask : open command prompt or terminal and enter command " pip install flask " if you have Python 2 or less installed else enter command "pip3 install flask" 
 <br>
 <br>
 
