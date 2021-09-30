@@ -23,4 +23,4 @@ A Shopping Website Tempelate made using Flask & (Html Css & JS)
 <br>
 <br>
 
-### Check out the webpage at https://trends-online-shopping.herokuapp.com/
+### Check out the project at https://trends-online-shopping.herokuapp.com/
