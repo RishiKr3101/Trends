@@ -17,7 +17,7 @@ A Shopping Website Tempelate made using Flask & (Html Css & JS)
 ## step 2
 
 
-~ clone this repo and run main.py (It starts running on home)
+~ clone this repository and run main.py (It starts running on home)
 <br>
 <br>
 <br>
