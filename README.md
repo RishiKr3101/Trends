@@ -2,7 +2,7 @@
 
 ## Description
 
-A Shopping Website Tempelate made using Flask & (Html Css & JS)  
+An Ecommerce Shopping Website Tempelate made using Flask & (HTML5 CSS3 & JavaScript)  
 <br>
 <br>
 
